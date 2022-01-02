@@ -14,9 +14,9 @@ challenge rating: number
 
 const sqlQuery = `CREATE TABLE IF NOT EXISTS monstermenagerie (
     id SERIAL PRIMARY KEY,
-     creaturename TEXT, 
-     creaturetype TEXT, 
-     alignment TEXT, 
+     creaturename VARCHAR(30), 
+     creaturetype VARCHAR(30), 
+     alignment VARCHAR(15), 
      armourclass INTEGER, 
      hitpoints INTEGER, 
      challengerating INTEGER

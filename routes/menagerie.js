@@ -1,9 +1,10 @@
 import express from "express";
-var router = express.Router();
+const router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.json({message: "All the information :D"});
+  res.json({message: "All the creature information :D"});
 });
 
-module.exports = router;
+export default router;
+

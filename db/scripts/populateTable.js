@@ -14,7 +14,13 @@ languages: text
 challengerating: number
 */
 
-async function populateMenagerieTable() {
+query(`INSERT INTO monstermenagerie VALUES (1, 'RedDragon', 'Dragon', 'ChaoticEvil', 19, 256, 'Draconic', 17) RETURNING *`)
+
+
+
+// I would use something like this below to populate the table via loop:
+
+/* async function populateMenagerieTable() {
     for (let i = 0; i < monstermenagerie.length; i++) {
         const creaturename = monstermenagerie[i].creaturename;
         const creaturetype = monstermenagerie[i].creaturetype;
@@ -32,3 +38,4 @@ async function populateMenagerieTable() {
 }
 
 populateMenagerieTable();
+*/

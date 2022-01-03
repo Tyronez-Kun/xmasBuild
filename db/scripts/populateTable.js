@@ -14,7 +14,7 @@ languages: text
 challengerating: number
 */
 
-query(`INSERT INTO monstermenagerie VALUES (1, 'RedDragon', 'Dragon', 'ChaoticEvil', 19, 256, 'Draconic', 17) RETURNING *`)
+query(`INSERT INTO monstermenagerie VALUES (1, RedDragon, Dragon, ChaoticEvil, 19, 256, Draconic, 17) RETURNING *`)
 
 
 

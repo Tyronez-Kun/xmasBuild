@@ -9,6 +9,10 @@ import http from 'http';
 import debugImport from 'debug';
 const debug = debugImport ('xmasbuild:server');
 
+//Fix Self signed certificate error.
+
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
 /**
  * Get port from environment and store in Express.
  */

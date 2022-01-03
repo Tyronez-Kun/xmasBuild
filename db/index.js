@@ -10,6 +10,9 @@ const pool = new pg.Pool({
     database: config.database,
     password: config.password,
     port: config.port,
+    
+    //added this to fix error
+    ssl: true
   });
   
 

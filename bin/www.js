@@ -9,7 +9,7 @@ import http from 'http';
 import debugImport from 'debug';
 const debug = debugImport ('xmasbuild:server');
 
-//Fix Self signed certificate error.
+//Fix Self signed certificate error:- maybe unwise?
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 

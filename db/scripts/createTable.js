@@ -1,5 +1,6 @@
 import query from "../index.js";
 
+console.log("hello im running as intended")
 /* Create a table
 
 id: number/primary key
@@ -12,11 +13,16 @@ languages: text
 challenge rating: number
 */
 
-const sqlQuery = `CREATE TABLE IF NOT EXISTS monstermenagerie (
-    id SERIAL PRIMARY KEY,
+query(`CREATE TABLE IF NOT EXISTS monstermenagerie (id SERIAL PRIMARY KEY, creaturename VARCHAR(30), creaturetype VARCHAR(30), alignment VARCHAR(30), armourclass INTEGER, hitpoints INTEGER, challengerating INTEGER)`)
+
+
+//Below i'm not sure if working
+
+/*const sqlQuery = `CREATE TABLE IF NOT EXISTS monstermenagerie (
+     id SERIAL PRIMARY KEY,
      creaturename VARCHAR(30), 
      creaturetype VARCHAR(30), 
-     alignment VARCHAR(15), 
+     alignment VARCHAR(30), 
      armourclass INTEGER, 
      hitpoints INTEGER, 
      challengerating INTEGER
@@ -28,4 +34,4 @@ async function createMenagerieTable() {
 }
  
 createMenagerieTable();
-
+)*/

@@ -8,7 +8,7 @@ export async function getAllCreatures() {
 
 //To get a single entry from table
 export async function  getCreatureById(id) {
-    const singledata = await query(`SELECT [id] FROM monstermenagerie;`)
-    return singledata.rows;
+    const data = await query(`SELECT [id] FROM monstermenagerie;`)
+    return data.rows;
 }
 
